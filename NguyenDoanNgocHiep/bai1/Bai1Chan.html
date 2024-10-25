@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6451071056 Bai1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h1>
+    <h2>Độc lập - Tự do - Hạnh phúc</h2>
+    
+    <h2>ĐƠN XIN CẤP PHÉP XUẤT BẢN BẢN TIN</h2>
+    
+    <p>Kính gửi: Sở Thông tin và Truyền thông Lâm Đồng</p>
+
+    <form>
+        <h3>1. Tên cơ quan, tổ chức xin phép xuất bản:</h3>
+        <label style="color: red">(*)</label>
+        <label for="TenCoQuan"></label>
+        <input type="text" id="TenCoQuan" name="TenCoQuan" required>
+
+        <label for="DiaChi">Địa chỉ:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="DiaChi" name="DiaChi" required>
+
+        <label for="phone">Điện thoại:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="fax">Fax:</label>
+        <input type="text" id="fax" name="fax">
+        <h4>Được thành lập (hoặc cho phép thành lập) theo:</h4>
+        <label for="GiayPhepSo">Giấy phép số:</label>
+        <input type="text" id="GiayPhepSo" name="GiayPhepSo" required>
+
+        <label for="NgayCap">Cấp ngày:</label>
+        <input type="date" id="NgayCap" name="NgayCap" required>
+
+        <label for="CoQuanCapPhep">Cơ quan cấp phép:</label>
+        <input type="text" id="CoQuanCapPhep" name="CoQuanCapPhep" required>
+
+        <label for="SoDKKD">Số ĐKKD:</label>
+        <input type="text" id="SoDKKD" name="SoDKKD" required>
+
+        <h3>2. Người chịu trách nhiệm xuất bản bản tin:</h3>
+        <label style="color: red">(*)</label>
+        <label for="Name">Họ và tên:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="Name" name="Name" required>
+
+        <label for="Date">Ngày sinh:</label>
+        <label style="color: red">(*)</label>
+        <input type="date" id="Date" name="Date" required>
+
+        <label for="QuocTich">Quốc tịch:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="QuocTich" name="QuocTich" required>
+
+        <label for="ChucDanh">Chức danh:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="ChucDanh" name="ChucDanh" required>
+
+        <label for="SoChungThuc">Số chứng thực:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="SoChungThuc" name="SoChungThuc" required>
+
+        <label for="NoiCap">Nơi cấp:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="NoiCap" name="NoiCap" required>
+
+        <label for="DCLienLac">Địa chỉ liên lạc:</label>
+        <label style="color: red">(*)</label>
+        <input type="text" id="DCLienLac" name="DCLienLac" required>
+
+        <label for="TrinhDo">Trình độ chuyên môn, nghiệp vụ:</label>
+        <input type="text" id="TrinhDo" name="TrinhDo" required>
+
+        <h3>3. Tên cơ quan chủ quản (nếu có):</h3>
+
+        <button type="submit">Gửi Đơn</button>
+    </form>
+
+</body>
+</html>

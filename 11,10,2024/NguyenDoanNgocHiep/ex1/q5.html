@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+   
+    
+    <button onclick="getUserInfo()">Nhập thông tin</button>
+    <div id="output"></div>
+
+    <script>
+        function getUserInfo() {
+            let name = prompt("Nhập vào tên của bạn:");
+            let age = prompt("Nhập vào tuổi của bạn:");
+
+            if (name && age) {
+                let output = document.getElementById("output");
+                output.innerHTML = `
+                    <p>Chào bạn: ${name}</p>
+                    <p>Tuổi của bạn là: ${age}</p> `;
+            }
+        }
+    </script>
+</body>
+</html>

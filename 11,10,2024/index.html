@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Phương Trình Bậc Hai</title>
+</head>
+<body>
+    <h1>Giải Phương Trình Bậc Hai</h1>
+    <p>Nhập các hệ số a, b, và c:</p>
+    <input type="number" id="a" placeholder="a"><br>
+    <input type="number" id="b" placeholder="b"><br>
+    <input type="number" id="c" placeholder="c"><br><br>
+    <button onclick="solve()">Giải phương trình</button><br>
+    
+    <h2>Kết quả:</h2>
+    <p id="Ketqua"></p>
+
+    <script>
+        function solveQuadratic(a, b, c) {
+            if ( a===0 && b===0){
+                return `Phương trình vô số nghiệm`;
+            }
+            if(a===0){
+                var x = -c/b;
+                return `Phương trình có nghiệm là: x = ${x.toFixed(2)}`;
+            }
+            var delta = b * b - 4 * a * c;
+            if (delta < 0) {
+                var Thuc = (-b / (2 * a)).toFixed(2);
+            var Ao = (Math.sqrt(-delta) / (2 * a)).toFixed(2);
+            return `Phương trình có hai nghiệm phức: x1 = ${Thuc} + ${Ao}i, x2 = ${Thuc} - ${Ao}i`;
+            } else if (delta === 0) {
+                var x = -b / (2 * a);
+                return `Phương trình có nghiệm kép: x = ${x}`;
+            } else {
+                var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                return `Phương trình có hai nghiệm phân biệt: x1 = ${x1}, x2 = ${x2}`;
+            }
+        }
+
+        function solve() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            var c = parseFloat(document.getElementById("c").value);
+            var result = solveQuadratic(a, b, c);
+            document.getElementById("Ketqua").innerText = result;
+        }
+    </script>
+</body>
+</html>

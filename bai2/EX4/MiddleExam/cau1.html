@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu 1</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        background-color: red;
+        color: white;
+        text-align: left;
+        padding: 5px;
+      }
+      div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 200px;
+        margin-right: 10px;
+      }
+      .info-text {
+        color: #004080;
+        font-size: 12px;
+      }
+      .required-asterisk {
+        color: red;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>Chi tiết cá nhân</h3>
+    </header>
+    <br />
+    <body>
+      <div>
+        <label for="Ten">Tên</label><span class="required-asterisk">*</span>
+        <input type="text" value="Quan" required /><br />
+      </div>
+      <div>
+        <label for="Ho">Họ</label><span class="required-asterisk">*</span>
+        <input type="text" value="Duong Quoc required" /><br />
+        <p class="info-text">
+          Tên phải khớp với tên trong tài khoản ngân hàng của bạn để gửi và rút
+          tiền.
+        </p>
+      </div>
+      <div>
+        <label>Giới tính</label><span class="required-asterisk">*</span>
+        <input type="radio" name="gender" required /> Nam
+        <input type="radio" name="gender" required /> Nữ
+      </div>
+      <div>
+        <label for="mail">Địa Chỉ Email</label
+        ><span class="required-asterisk">*</span>
+        <input type="email" value="12bet.us@gmail.com" required /><br />
+      </div>
+      <div>
+        <label for="reMail">Xác Nhận Địa chỉ Email</label
+        ><span class="required-asterisk">*</span>
+        <input type="email" value="12bet.us@gmail.com" required /><br />
+      </div>
+      <div>
+        <label for="birth-date">Ngày Sinh </label>
+        <span class="required-asterisk">*</span>
+        <input
+          type="number"
+          id="month"
+          name="month"
+          min="1"
+          max="12"
+          value="5"
+        />
+        <input type="number" id="day" name="day" min="1" max="31" value="26" />
+        <input
+          type="number"
+          id="year"
+          name="year"
+          min="1900"
+          max="2024"
+          value="1981"
+        />
+        <p class="info-text">(ví dụ, 12 tháng 1 năm 1970)</p>
+      </div>
+      <div>
+        <label for="quocGia">Quốc gia</label
+        ><span class="required-asterisk">*</span>
+        <select id="quocGia" name="quocGia" required>
+          <option value="Viet Nam">Việt Nam</option>
+          <option value="USA">Hoa Kỳ</option>
+          <option value="UK">Vương Quốc Anh</option>
+        </select>
+      </div>
+      <div>
+        <label for="diaChi">Địa chỉ</label
+        ><span class="required-asterisk">*</span>
+        <input type="text" value="38 Nguyen Binh Khiem" required /><br />
+      </div>
+      <div>
+        <label for="quanHuyen">Phường/Thị xã-Quận/Huyện</label
+        ><span class="required-asterisk">*</span>
+        <input type="text" value="Dong Ha" required /><br />
+      </div>
+      <div>
+        <label for="thanhPho">Thành Phố/Tỉnh</label
+        ><span class="required-asterisk">*</span>
+        <input type="text" value="Quang Tri" required /><br />
+      </div>
+      <div>
+        <label for="maZip">Mã Zip</label
+        ><span class="required-asterisk">*</span>
+        <input type="number" value="84" required /><br />
+      </div>
+      <div>
+        <label for="diDong">Di động</label
+        ><span class="required-asterisk">*</span>
+        <input type="tel" value="0935424001" required /><br />
+      </div>
+    </body>
+  </body>
+</html>

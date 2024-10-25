@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculation</title>
+    <style>
+        .calculator-box {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .calculator-box input[type="text"],
+        .calculator-box select {
+            width: calc(100% - 120px);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .calculator-box label {
+            width: 100px;
+            display: inline-block;
+        }
+        .calculator-box button {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .calculator-box h2 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function calculate() {
+            var number1 = parseFloat(document.getElementById("number1").value);
+            var number2 = parseFloat(document.getElementById("number2").value);
+            var operation = document.getElementById("operation").value;
+            var result;
+
+            if (operation === 'add') {
+                result = number1 + number2;
+            } else if (operation === 'sub') {
+                result = number1 - number2;
+            } else if (operation === 'multiply') {
+                result = number1 * number2;
+            } else if (operation === 'divide') {
+                result = number1 / number2;
+            }
+
+            document.getElementById("result").value = result;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="calculator-box">
+        <h2>Basic Calculation</h2>
+
+        <label for="number1">Number 1</label>
+        <input type="text" id="number1" placeholder="Number 1"><br>
+
+        <label for="number2">Number 2</label>
+        <input type="text" id="number2" placeholder="Number 2"><br>
+
+        <label for="operation">Option</label>
+        <select id="operation">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select><br>
+
+        <label for="result">Result</label>
+        <input type="text" id="result" placeholder="Result" readonly><br>
+
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6451071056 Bai 2</title>
+</head>
+<style>
+    .highlight {
+        color: #1E90FF;
+    }
+
+    .back_ground {
+        background-color: #B0C4DE;
+        padding: 10px;
+        font-size: 24px;
+        margin-top: 30px;
+        color: #000;
+    }
+
+    .title {
+        color: #3A7BB8;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .highlight-bold {
+        font-weight: 800;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .center {
+        align-items: center;
+    }
+
+</style>
+<body>
+    <div>
+        <h2 class="back_ground title">About</h2>
+        <p>Woof woof! Hi, I'm Dog. I love <span class="highlight">User Interface Design</span>.</p>
+        <h2 class="back_ground title">Courses</h2>
+        <p>Here are some courses I've taken:</p>
+        <h2 class="back_ground title">Interests</h2>
+        <table>
+            <tr>
+                <th>Course Number</th>
+                <th>Course Title</th>
+                <th>Semester Taken</th>
+            </tr>
+            <tr>
+                <td colspan="3" class="center"><strong>For Credit</strong></td>
+            </tr>
+            <tr>
+                <td>6.813</td>
+                <td><span>User Interface Design</span></td>
+                <td>Spring 2014</td>
+            </tr>
+            <tr>
+                <td>6.034</td>
+                <td>Artificial Intelligence</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <td>6.006</td>
+                <td>Introduction to Algorithms</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="center"><strong>Listener</strong></td>
+            </tr>
+            <tr>
+                <td>6.867</td>
+                <td>Machine Learning</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <td>6.830</td>
+                <td>Database Systems</td>
+                <td>Fall 2012</td>
+            </tr>
+        </table>
+        <p>I am interested <span class="highlight-bold">HCI</span>, memes, and youtube videos.</p>
+
+        <h2 class="back_ground title">Submit Pet Information</h2>
+        <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+        <form action="#">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="phylum">Phylum:</label>
+                <input type="text" id="phylum" name="phylum">
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender">
+            </div>
+            <button type="submit">Submit</button>
+    </form>
+    </div>

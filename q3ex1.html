@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click to Hide Paragraphs</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+    <p>If you double_click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+
+    <script>
+        $(document).ready(function() {
+            // su dudng click thay cho dbclick
+            $('p').click(function() {
+                $(this).hide(); 
+            });
+        });
+    </script>
+
+</body>
+</html>
+Người ra đề không thích double click mới ẩn mà muốn click một
+lần là ẩn. Hãy sửa lại chương trình sao cho vừa ý yêu cầu người
+ra đề.

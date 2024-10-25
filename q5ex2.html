@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di Chuyển Div</title>
+    <style>
+        #myDiv {
+            width: 100px; /* Chiều rộng ban đầu */
+            height: 100px; /* Chiều cao ban đầu */
+            background-color: blue; /* Màu nền */
+            position: relative; /* Để có thể dịch chuyển */
+            transition: all 0.5s ease; /* Hiệu ứng chuyển động */
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button onclick="moveDiv()">Click để di chuyển</button>
+
+    <script>
+        function moveDiv() {
+            const div = document.getElementById("myDiv");
+            div.style.left = "250px"; // Dịch chuyển sang trái 250px
+            div.style.opacity = "0.5"; // Đặt độ mờ
+            div.style.width = "150px"; // Tăng chiều rộng thêm 50px
+            div.style.height = "150px"; // Tăng chiều cao thêm 50px
+        }
+    </script>
+</body>
+</html>

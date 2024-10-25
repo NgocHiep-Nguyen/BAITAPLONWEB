@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 3</title>
+</head>
+<body>
+    <div id="result"></div>
+
+    <script>
+        window.onload = function() {
+            showConfirm();
+        };
+
+        function showConfirm() {
+            let result = confirm("Trang này cho biết\nBạn có đồng ý yêu không?");
+            const resultDiv = document.getElementById('result');
+
+            if (result) {
+                resultDiv.textContent = "Tôi cũng yêu bạn!!!";
+            }
+        }
+    </script>
+    
+</body>
+</html>

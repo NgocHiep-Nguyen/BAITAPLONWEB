@@ -1,0 +1,20 @@
+.container {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.centered {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.padding {
+    padding: 20px;
+}

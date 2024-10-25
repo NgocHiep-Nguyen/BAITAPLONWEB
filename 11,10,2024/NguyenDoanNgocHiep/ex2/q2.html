@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        .calculator-box {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .calculator-box input[type="text"] {
+            width: calc(100% - 120px);
+            padding: 5px;
+        }
+        .calculator-box label {
+            width: 100px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .calculator-box button {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .calculator-box h2 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function calculateRectangle() {
+            var length = parseFloat(document.getElementById("length").value);
+            var width = parseFloat(document.getElementById("width").value);
+
+            var perimeter = 2 * (length + width);
+            var area = length * width;
+
+            document.getElementById("perimeterResult").value = perimeter;
+            document.getElementById("areaResult").value = area;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="calculator-box">
+        <h2>Tính chu vi, diện tích hình chữ nhật</h2>
+        <label for="length">Nhập chiều dài:</label>
+        <input type="text" id="length" placeholder="Chiều dài"><br>
+
+        <label for="width">Nhập chiều rộng:</label>
+        <input type="text" id="width" placeholder="Chiều rộng"><br>
+
+        <button onclick="calculateRectangle()">Tính toán</button><br>
+
+        <label for="perimeterResult">Chu vi là:</label>
+        <input type="text" id="perimeterResult" placeholder="Kết quả chu vi" readonly><br>
+
+        <label for="areaResult">Diện tích là:</label>
+        <input type="text" id="areaResult" placeholder="Kết quả diện tích" readonly><br>
+    </div>
+
+</body>
+</html>

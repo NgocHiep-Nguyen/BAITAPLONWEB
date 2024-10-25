@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Paragraphs Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        h3 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>This is a heading</h3>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph</p>
+
+    <button id="hideParagraphs">Click me to hide paragraphs</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#hideParagraphs').click(function() {
+                $('p').hide();  // Ẩn tất cả các thẻ <p>
+            });
+        });
+    </script>
+
+</body>
+</html>

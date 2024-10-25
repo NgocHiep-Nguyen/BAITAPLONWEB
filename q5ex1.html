@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over and Out Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p>DI chuot vao day</p>
+
+    <script>
+        $(document).ready(function() {
+            $('p').mouseenter(function() {
+                alert("Bạn vừa di chuột vào dòng này");
+            }).mouseleave(function() {
+                alert("Goodbye ! My Love");
+            });
+        });
+    </script>
+
+</body>
+</html>
